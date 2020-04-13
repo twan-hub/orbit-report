@@ -10,7 +10,7 @@
 
     <tr *ngFor="let element of satellites ">
         <td>{{element.name}}</td>
-        <td>{{element.type}}</td>
+        <td [class.warning]=' element.Warn() '>{{element.type}}</td>
         <td>{{element.operational}}</td>
         <td>{{element.orbitType}}</td>
         <td>{{element.launchDate}}</td>
